@@ -65,8 +65,11 @@ hellfire-spaceship/
 **Paleta de Cores**
 
 Ciano Neon: ``#00ffff`` (elementos principais)
+
 Vermelho Coral: ``#ff6b6b`` (ações secundárias)
+
 Dourado: ``#ffd93d`` (destaques)
+
 Cinza Espacial: ``#27272c`` (backgrounds)
 
 **Tipografia**
