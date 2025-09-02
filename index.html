@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Nave Espacial Intergaláctica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video id="background-video" autoplay muted loop>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Música de fundo -->
+    <audio id="background-music" autoplay loop>
+      <source src="assets/background-music.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <div class="container">
+      <header class="header">
+        <h1 class="title">🛸 Controle de Nave Espacial</h1>
+        <p class="subtitle">Ajude o navegador Zorblax na jornada através da Via Láctea</p>
+      </header>
+
+      <div class="input-section">
+        <label for="movementInput" class="input-label"> 📥 Sequência de Movimentos (separados por vírgula): </label>
+        <textarea
+          id="movementInput"
+          class="movement-input"
+          placeholder="Digite os movimentos: frente, trás, esquerda, direita"
+          rows="3"
+          tabindex="1"
+        ></textarea>
+        <small class="input-hint"> Exemplo: frente, esquerda, frente, trás, direita </small>
+      </div>
+
+      <div class="button-section">
+        <button id="calculateBtn" class="action-button" style="--clr: #00ffff" tabindex="2">
+          <span>Calcular</span>
+          <i></i>
+        </button>
+        <button id="resetBtn" class="action-button" style="--clr: #ffa500" tabindex="3">
+          <span>Retornar</span>
+          <i></i>
+        </button>
+      </div>
+
+      <div class="result-section" id="resultSection">
+        <h3 class="result-title">📤 Resultado da Jornada</h3>
+        <div class="calculation-details" id="calculationDetails">
+          <!-- Detalhes do cálculo aparecerão aqui -->
+        </div>
+        <div class="final-result" id="finalResult">
+          <!-- Resultado final aparecerá aqui -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
